@@ -1,45 +1,28 @@
+import Card from './components/card/card';
+import Footer from './components/footer/footer';
+import Header from './components/header/header';
+import cards from './utils/cards';
+
 import './App.css';
-import Card from './components/card';
 
-const cards = [
-{
-  word: "word",
-  transcription: "|wɜːrd|",
-  translation: "слово",
-  topic: "basic",
-},
-{
-  word: "reword",
-  transcription: "|riːˈwɜːd|",
-  translation: "выражать другими словами, менять формулировку, повторять",
-  topic: "basic",
-},
-{
-  word: "business",
-  transcription: "|ˈbɪznəs|",
-  translation: "бизнес, дело, фирма, занятие, деловой, практический",
-  topic: "basic",
-}
-
-];
 
 
 
 function App() {
   return (
     <div className="App">
-      <header className="header"></header>
+      <Header />
       <div className="main">
-      <h1>СЛОВАРЬ</h1>
+      <h1>WORDLIST</h1>
       <div className="cards-map">
       {
       cards.map((card) => 
-      <Card word={card.word} transcription={card.transcription} translation={card.translation} topic={card.topic} />
+      <Card english={card.english} transcription={card.transcription} russian={card.russian} tags={card.tags} isSelected={card.isSelected} />
       )
       }
       </div>
       </div>
-      <footer className="footer"></footer>
+      <Footer />
     </div>
   );
 }

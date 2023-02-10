@@ -7,9 +7,10 @@
   }
   
   h2 {
-    text-align: center;
+    /* text-align: center; */
     color: rgb(154, 154, 154);
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
+    /* line-height: 100%; */
   }
   span {
     font-weight:bolder;
@@ -24,11 +25,29 @@
   }
   .card-word {
     background-color: white;
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
+    width: 1000px;
+    display: grid;
+    grid-template-columns: 3fr 2fr 6fr 1.5fr 2.5fr;
+    grid-template-rows: 1fr;
+    margin: 5px;
     border-radius: 10px;
-    padding: 30px;
-    justify-content: space-evenly;
+    padding: 0px 30px;
+    justify-content: left;
+    gap: 20px;
   }
+  .card-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: baseline;
+    margin-top: 16px;
+  }
+  .card-button {
+    height: 35px;
+    width: 35px;
+    border: none;
+    border-radius: 10px;
+  }
+
+  
