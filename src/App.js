@@ -1,26 +1,38 @@
-import Card from './components/card/card';
-import Footer from './components/footer/footer';
-import Header from './components/header/header';
-import cards from './utils/cards';
+import Card from "./components/Card/Card";
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
+import Game from "./components/Game/Game";
 
-import './App.css';
+import cards from "./utils/cards";
 
-
-
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <Header />
       <div className="main">
-      <h1>WORDLIST</h1>
-      <div className="cards-map">
-      {
-      cards.map((card) => 
-      <Card english={card.english} transcription={card.transcription} russian={card.russian} tags={card.tags} isSelected={card.isSelected} />
-      )
-      }
-      </div>
+        <h1>WORDLIST</h1>
+        <div className="cards-map">
+          {cards.map((card) => (
+            <Card
+              english={card.english}
+              transcription={card.transcription}
+              russian={card.russian}
+              tags={card.tags}
+              isSelected={card.isSelected}
+            />
+          ))}
+        </div>
+        <div className="game-map">
+          {cards.map((game) => (
+            <Game
+              english={game.english}
+              transcription={game.transcription}
+              russian={game.russian}
+            />
+          ))}
+        </div>
       </div>
       <Footer />
     </div>

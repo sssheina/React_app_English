@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;900&display=swap");
+
+.game-card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 400px;
+    margin: 50px auto;
+    align-items: center;
+    background-color:#F0F0F0;
+    gap: 30px;
+    border-radius: 10px;
+}
+.game-english{
+    margin-top: 60px;
+}
+.game-span {
+    text-align: center;
+    font-size: var(--text-size-medium);
+    color: var(--color-gray);
+    font-weight: 700;
+}
+
+.game-translate {
+    text-align:center;
+    font-size: var(--text-size-medium);
+    font-weight: 700;
+    cursor: pointer;
+    font-family: 'Montserrat';
+    color: var(--color-pink);
+
+}
+
+.game-buttonName {
+    background-color:var(--color-pinklite);
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: var(--text-size-medium);
+    font-weight: 700;
+    font-family: 'Montserrat';
+    color: var(--color-pink);
+
+}
+
+.game-button {
+    
+    color: var(--color-gray);
+    font-size: var(--text-size-large);
+    text-align: center;
+    
+    margin: 1rem auto;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 15px;
+  }
+
+  .translation {
+    color: --color-gray;
+    font-size: large;
+    background: none;
+    margin: 0;
+    padding: 0;
+    
+  }

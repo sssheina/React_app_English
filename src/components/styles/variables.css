@@ -1,0 +1,13 @@
+HTML {
+  --color-pink: rgb(250, 153, 153);
+  --color-pinklite: rgb(253, 222, 222);
+  --color-gray: hsl(0deg 0% 60%);
+  --color-white: hsl(0deg 0% 100%);
+
+  --min-tap-target-height: 40px;
+  --min-tap-target-width: 40px;
+
+  --text-size-large: 24px;
+  --text-size-medium: 16px;
+  --text-size-small: 14px;
+}

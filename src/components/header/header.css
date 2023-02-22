@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    background-color: white;
+    background-color:  var(--color-white);
     height: 100px;
     width: 100%;
 }
@@ -19,7 +19,7 @@
     flex-direction: row;
     font-size: x-large;
     font-weight: 800;
-    color: rgb(250, 151, 151);
+    color:  var(--color-pink);
     align-content: center;
     align-items: center;
 
@@ -33,12 +33,23 @@
 .menuList {
     display: flex;
     flex-direction: row;
-    color: rgb(250, 151, 151);
+    color: var(--color-pink);
+}
+a {
+    text-decoration: none;
+    color: var(--color-pink);
+}
+a:hover {
+    border-top: 3px solid rgb(253, 222, 222);
+    border-bottom: 3px solid rgb(253, 222, 222);
+    padding: 6px 0;
 }
 
 .menuItem {
     list-style-type: none;
     padding-left: 20px;
-    font-size: 16px;
+    font-size: var(--text-size-medium);
+    /* color: var(--color-pink); */
     font-weight: 700;
+    text-decoration: none;
 }

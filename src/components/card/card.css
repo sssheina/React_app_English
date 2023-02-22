@@ -1,33 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;900&display=swap");
   
+
   
   body {
     padding: 0;
-    background: rgb(250, 151, 151);
+    background: var(--color-pink);
   }
   
   h2 {
-    /* text-align: center; */
-    color: rgb(154, 154, 154);
-    /* text-transform: uppercase; */
-    /* line-height: 100%; */
+    color: var(--color-gray);
+    font-size: var(--text-size-large);
   }
-  span {
+  .card-span {
     font-weight:bolder;
-    font-size: 14px;
+    font-size: var(--text-size-small);
     font-family: "Montserrat";
   }
-  p {
-    color: rgb(154, 154, 154);
+  .card-item {
+    color: var(--color-gray);
     font-family: "Montserrat";
     line-height: 200%;
     text-align: start;
   }
   .card-word {
-    background-color: white;
+    background-color: var(--color-white);
     width: 1000px;
+    height: 100px;
     display: grid;
-    grid-template-columns: 3fr 2fr 6fr 1.5fr 2.5fr;
+    grid-template-columns: 3fr 2fr 5.5fr 1.5fr 3fr;
     grid-template-rows: 1fr;
     margin: 5px;
     border-radius: 10px;
@@ -38,16 +38,90 @@
   .card-buttons {
     display: flex;
     flex-direction: row;
-    gap: 20px;
-    justify-content: center;
-    align-items: baseline;
-    margin-top: 16px;
+    gap: 10px;
+    justify-content: flex-end;
+    align-items: center;
+    
   }
-  .card-button {
-    height: 35px;
-    width: 35px;
+  
+
+  .selected {
+    background-color:rgb(253, 222, 222);
+  }
+
+  .cardSaveButton {
+    height:  var(--min-tap-target-height);
+    width:  var(--min-tap-target-width);
+    /* background-color:#66dbba; */
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
+    /* color: var(--color-white); */
+    /* font-weight:800; */
+    /* font-size: 19px; */
+    cursor: pointer;
+  }
+.cardSaveButton:hover{
+  background-color:#8ee1c9;
+}
+  .cardEditButton{
+    height: var(--min-tap-target-height);
+    width: var(--min-tap-target-width);
+    /* background-color:#f7b276; */
+    /* color: var(--color-white); */
+    border: none;
+    border-radius: 5px;
+    font-weight:800;
+    /* font-size: var(--text-size-large); */
+    cursor: pointer;
+  }
+  .cardEditButton:hover {
+    /* background-color:#f8c89e; */
+  }
+
+  .cardDeleteButton{
+    height:  var(--min-tap-target-height);
+    width:  var(--min-tap-target-width);
+    /* background-color:rgb(253, 116, 104); */
+    /* color: var(--color-white); */
+    border: none;
+    border-radius: 5px;
+    /* font-weight:800;
+    font-size: var(--text-size-large); */
+    cursor: pointer;
+  }
+  
+  .cardDeleteButton:hover {
+    /* background-color:rgb(254, 157, 148); */
+  }
+
+  .cardCancelButton {
+    height: var(--min-tap-target-height);
+    width: var(--min-tap-target-width);
+    /* background-color:#f7b276;
+    color: var(--color-white); */
+    border: none;
+    border-radius: 5px;
+    /* font-weight:800;
+    font-size: var(--text-size-large); */
+    cursor: pointer;
+  }
+  .cardCancelButton:hover {
+    /* background-color:#f8c89e; */
+  }
+
+  img {
+    width: 40px;
+    height: 40px;
+  }
+
+  input {
+    font-family: "Montserrat";
+    color: var(--color-gray);
+    border: 1px solid var(--color-pink);
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
   }
 
   
