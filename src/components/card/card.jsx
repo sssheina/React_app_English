@@ -8,8 +8,6 @@ import delete_pink from "../images/delete_pink.png";
 import edit_pink from "../images/edit_pink.png";
 import save_pink from "../images/save_pink-pink.png";
 
-
-
 export default function Card(props) {
   const [pressed, setPressed] = useState(false);
   const { english, transcription, russian, tags } = props;
@@ -28,7 +26,7 @@ export default function Card(props) {
   if (pressed) classCardButtons = "selected";
 
   return (
-    <div className={`card-word ${classCardButtons}`} >
+    <div className={`card-word ${classCardButtons}`}>
       {isEdit ? (
         <>
           <p className="card-item">
@@ -83,7 +81,6 @@ export default function Card(props) {
   );
 }
 
-
 // export default function Card(props) {
 //   const [pressed, setPressed] = useState(false);
 //   const {
@@ -120,66 +117,6 @@ export default function Card(props) {
 //       </div>
 //   );
 // }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // import { useState } from "react";
 // import styles from "../RowTable/row.module.scss";
