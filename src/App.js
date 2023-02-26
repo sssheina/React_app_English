@@ -26,6 +26,7 @@ function App() {
         </div>
         <Game/>
         {/* <div className="game-map">
+
           {cards.map((game) => (
             <Game
               english={game.english}
@@ -33,6 +34,7 @@ function App() {
               russian={game.russian}
             />
           ))}
+          
         </div> */}
       </div>
       <Footer />

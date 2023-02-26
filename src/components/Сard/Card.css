@@ -71,7 +71,7 @@ h2 {
   cursor: pointer;
 }
 .cardEditButton:hover {
-  /* background-color:#f8c89e; */
+  /* border:var(--color-pink); */
 }
 
 .cardDeleteButton {
