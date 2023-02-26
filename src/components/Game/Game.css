@@ -1,11 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;900&display=swap");
 
+.game {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 70px auto;
+}
 .game-card {
   display: flex;
   flex-direction: column;
   width: 300px;
   height: 400px;
-  margin: 50px auto;
+  margin: 50px 100px;
   align-items: center;
   background-color: #f0f0f0;
   gap: 30px;
@@ -34,6 +41,36 @@
   background-color: var(--color-pinklite);
   padding: 20px;
   border-radius: 10px;
+  cursor: pointer;
+  font-size: var(--text-size-medium);
+  font-weight: 700;
+  font-family: "Montserrat";
+  color: var(--color-pink);
+}
+
+.game-prev {
+  background-color: var(--color-pinklite);
+  padding: 20px;
+  border:none;
+  border-radius: 10px;
+  margin-left: 300px;
+  cursor: pointer;
+  font-size: var(--text-size-medium);
+  font-weight: 700;
+  font-family: "Montserrat";
+  color: var(--color-pink);
+}
+
+.game-prev:hover, .game-next:hover, .game-buttonName:hover{
+  background-color: var(--color-white);
+}
+
+.game-next {
+  background-color: var(--color-pinklite);
+  padding: 20px;
+  border:none;
+  border-radius: 10px;
+  margin-right: 300px;
   cursor: pointer;
   font-size: var(--text-size-medium);
   font-weight: 700;

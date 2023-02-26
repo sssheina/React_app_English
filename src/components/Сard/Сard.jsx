@@ -3,13 +3,14 @@ import React, { useState } from "react";
 import "./Card.css";
 import "../styles/variables.css";
 
+// import back_pink from "../images/back_pink-pink.png";
 import back_pink from "../images/back_pink-pink.png";
 import delete_pink from "../images/delete_pink.png";
 import edit_pink from "../images/edit_pink.png";
 import save_pink from "../images/save_pink-pink.png";
 
 export default function Card(props) {
-  const [pressed, setPressed] = useState(false);
+  // const [pressed, setPressed] = useState(false);
   const { english, transcription, russian, tags } = props;
   const [isEdit, setIsEdit] = useState(false);
   const [inputText, setInputText] = useState(props);
@@ -22,11 +23,11 @@ export default function Card(props) {
     setInputText(props);
     setIsEdit(!isEdit);
   }
-  let classCardButtons;
-  if (pressed) classCardButtons = "selected";
+  // let classCardButtons;
+  // if (pressed) classCardButtons = "selected";
 
   return (
-    <div className={`card-word ${classCardButtons}`}>
+    <div className='card-word'>
       {isEdit ? (
         <>
           <p className="card-item">
