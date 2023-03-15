@@ -1,4 +1,4 @@
-import ErrorPage from "./ErrorPage"
+import ErrorPage from "./ErrorPage";
 
 class GetServices {
   static async getWord() {

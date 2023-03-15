@@ -1,0 +1,17 @@
+.divNoMatch {
+    display: flex;
+    background-color: white;
+    width: 900px;
+    height: 600px;
+    margin: 150px auto;
+    align-items: center;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.imgNoMatch {
+    /* width: 700px; */
+    height: 300px;
+}
