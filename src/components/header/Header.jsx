@@ -8,37 +8,58 @@ import logo from "../images/logo_1.png";
 function Header() {
   return (
     <div className="header">
-      <motion.div class="logoBlock" whileHover={{
-              scale:1.03,
-            }}>
+      <motion.div
+        class="logoBlock"
+        whileHover={{
+          scale: 1.03,
+        }}
+      >
         <img class="logo" src={logo} alt="logo" />
-        <Link to="/home" className="logoA">ENGLISH CARDS</Link>
+        <Link to="/home" className="logoA">
+          ENGLISH CARDS
+        </Link>
       </motion.div>
       <nav className="menu">
         <ul className="menuList">
-        <motion.li className="menuItem" 
-        whileHover={{
-              scale:1.2,
-            }}>
-            <Link to="/home" className="menuA">HOME</Link>
+          <motion.li
+            className="menuItem"
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <Link to="/home" className="menuA">
+              HOME
+            </Link>
           </motion.li>
-          <motion.li className="menuItem"
-          whileHover={{
-            scale:1.2,
-          }}>
-            <Link to="/words" className="menuA">WORDS</Link>
+          <motion.li
+            className="menuItem"
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <Link to="/words" className="menuA">
+              WORDS
+            </Link>
           </motion.li>
-          <motion.li className="menuItem"
-          whileHover={{
-            scale:1.2,
-          }}>
-            <Link to="/game" className="menuA">GAME</Link>
+          <motion.li
+            className="menuItem"
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <Link to="/game" className="menuA">
+              GAME
+            </Link>
           </motion.li>
-          <motion.li className="menuItem"
-          whileHover={{
-            scale:1.2,
-          }}>
-            <Link to="*" className="menuA">ERROR</Link>
+          <motion.li
+            className="menuItem"
+            whileHover={{
+              scale: 1.2,
+            }}
+          >
+            <Link to="*" className="menuA">
+              ERROR
+            </Link>
           </motion.li>
         </ul>
       </nav>

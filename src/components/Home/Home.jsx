@@ -48,7 +48,7 @@ function Home() {
             }}
           >
             <Link to="/words" className="button__words-link">
-              STUDY
+              WORDS
             </Link>
           </motion.button>
           <motion.button
