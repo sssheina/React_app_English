@@ -27,6 +27,7 @@ function App() {
       <Route path="/words" element={<Main />} />
       <Route path="/game" element={<Game />} />
       <Route path="/home" element={<Home />} />
+      <Route path="/Week_26_Project_Eng_2" element={<Home />} />
       <Route path="*" element={<NoMatch />} />
       </Routes>
 
