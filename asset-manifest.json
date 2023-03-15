@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "/Week_26_Project_Eng_2/static/css/main.72c8f778.css",
-    "main.js": "/Week_26_Project_Eng_2/static/js/main.198c76a7.js",
+    "main.css": "/Week_26_Project_Eng_2/static/css/main.b707fc15.css",
+    "main.js": "/Week_26_Project_Eng_2/static/js/main.28465fc1.js",
     "static/js/787.22c43ede.chunk.js": "/Week_26_Project_Eng_2/static/js/787.22c43ede.chunk.js",
+    "static/media/404c.png": "/Week_26_Project_Eng_2/static/media/404c.f87cb7ec2e1705960f3e.png",
+    "static/media/picLogo.png": "/Week_26_Project_Eng_2/static/media/picLogo.27f5d0e9c9dc17a6b836.png",
     "static/media/logo_1.png": "/Week_26_Project_Eng_2/static/media/logo_1.d654ecbf9560b7119dfb.png",
     "index.html": "/Week_26_Project_Eng_2/index.html",
-    "main.72c8f778.css.map": "/Week_26_Project_Eng_2/static/css/main.72c8f778.css.map",
-    "main.198c76a7.js.map": "/Week_26_Project_Eng_2/static/js/main.198c76a7.js.map",
+    "main.b707fc15.css.map": "/Week_26_Project_Eng_2/static/css/main.b707fc15.css.map",
+    "main.28465fc1.js.map": "/Week_26_Project_Eng_2/static/js/main.28465fc1.js.map",
     "787.22c43ede.chunk.js.map": "/Week_26_Project_Eng_2/static/js/787.22c43ede.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.72c8f778.css",
-    "static/js/main.198c76a7.js"
+    "static/css/main.b707fc15.css",
+    "static/js/main.28465fc1.js"
   ]
 }
