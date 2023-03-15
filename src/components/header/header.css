@@ -7,6 +7,12 @@
   background-color: var(--color-white);
   height: 100px;
   width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
 }
 
 .logo {
@@ -33,11 +39,11 @@
   flex-direction: row;
   color: var(--color-pink);
 }
-a {
+.menuA, .logoA {
   text-decoration: none;
   color: var(--color-pink);
 }
-a:hover {
+.menuA:hover {
   border-top: 3px solid rgb(253, 222, 222);
   border-bottom: 3px solid rgb(253, 222, 222);
   padding: 6px 0;

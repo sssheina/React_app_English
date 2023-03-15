@@ -1,44 +1,38 @@
-import Card from "./components/Сard/Сard";
+import React from "react";
+// import Card from "./components/Сard/Сard";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Game from "./components/Game/Game";
+import Main from "./Main";
+import NoMatch from "./components/NoMatch/NoMatch";
+import Home from "./components/Home/Home";
 
-import cards from "./utils/cards";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
 
 import "./App.css";
 
+
 function App() {
   return (
-    <div className="App">
+    <Router>
+      <div className="App">
       <Header />
-      <div className="main">
-        <h1>WORDLIST</h1>
-        <div className="cards-map">
-          {cards.map((card) => (
-            <Card
-              english={card.english}
-              transcription={card.transcription}
-              russian={card.russian}
-              tags={card.tags}
-              isSelected={card.isSelected}
-            />
-          ))}
-        </div>
-        <Game/>
-        {/* <div className="game-map">
 
-          {cards.map((game) => (
-            <Game
-              english={game.english}
-              transcription={game.transcription}
-              russian={game.russian}
-            />
-          ))}
-          
-        </div> */}
-      </div>
+      <Routes>
+      <Route path="/words" element={<Main />} />
+      <Route path="/game" element={<Game />} />
+      <Route path="/home" element={<Home />} />
+      <Route path="*" element={<NoMatch />} />
+      </Routes>
+
       <Footer />
     </div>
+    </Router>
   );
 }
 

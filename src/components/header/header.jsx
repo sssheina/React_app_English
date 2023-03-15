@@ -1,3 +1,6 @@
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { motion } from "framer-motion";
+
 import "./Header.css";
 
 import logo from "../images/logo_1.png";
@@ -5,18 +8,38 @@ import logo from "../images/logo_1.png";
 function Header() {
   return (
     <div className="header">
-      <div class="logoBlock">
+      <motion.div class="logoBlock" whileHover={{
+              scale:1.03,
+            }}>
         <img class="logo" src={logo} alt="logo" />
-        ENGLISH CARDS
-      </div>
+        <Link to="/home" className="logoA">ENGLISH CARDS</Link>
+      </motion.div>
       <nav className="menu">
         <ul className="menuList">
-          <li className="menuItem">
-            <a href="/">WORDS</a>
-          </li>
-          <li className="menuItem">
-            <a href="/">GAME</a>
-          </li>
+        <motion.li className="menuItem" 
+        whileHover={{
+              scale:1.2,
+            }}>
+            <Link to="/home" className="menuA">HOME</Link>
+          </motion.li>
+          <motion.li className="menuItem"
+          whileHover={{
+            scale:1.2,
+          }}>
+            <Link to="/words" className="menuA">WORDS</Link>
+          </motion.li>
+          <motion.li className="menuItem"
+          whileHover={{
+            scale:1.2,
+          }}>
+            <Link to="/game" className="menuA">GAME</Link>
+          </motion.li>
+          <motion.li className="menuItem"
+          whileHover={{
+            scale:1.2,
+          }}>
+            <Link to="*" className="menuA">ERROR</Link>
+          </motion.li>
         </ul>
       </nav>
     </div>

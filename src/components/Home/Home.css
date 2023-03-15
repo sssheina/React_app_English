@@ -1,0 +1,51 @@
+.homePage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 900px;
+    height: 500px;
+    background-color: var(--color-white);
+    margin: 170px auto;
+    border-radius: 10px;
+}
+.homePage__wrap_left {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    width: 40%;
+}
+.homePage__title {
+color: var(--color-pink);
+font-size: 40px;
+text-align: start;
+
+}
+.picLogo {
+    height: 200px;
+    padding: 50px;
+}
+.homePage__buttons {
+    display: flex;
+    flex-direction: row;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    gap: 30px;
+}
+.button__words-link, .button__game-link {
+    text-decoration: none;
+    color: var(--color-pink);
+}
+.button__words, .button__game {
+    background-color: var(--color-graylite);
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Montserrat";
+    color: var(--color-pink);
+}
+.button__words:hover, .button__game:hover {
+    background-color: var(--color-pinklite);
+}

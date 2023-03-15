@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+
 import "./Card.css";
 import "../styles/variables.css";
 
@@ -27,7 +28,7 @@ export default function Card(props) {
   // if (pressed) classCardButtons = "selected";
 
   return (
-    <div className='card-word'>
+    <div className="card-word">
       {isEdit ? (
         <>
           <p className="card-item">

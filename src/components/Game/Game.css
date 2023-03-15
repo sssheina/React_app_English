@@ -5,7 +5,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin: 70px auto;
+  margin: 170px auto;
 }
 .game-card {
   display: flex;
@@ -14,7 +14,7 @@
   height: 400px;
   margin: 50px 100px;
   align-items: center;
-  background-color: #f0f0f0;
+  background-color: var(--color-graylite);
   gap: 30px;
   border-radius: 10px;
 }
@@ -95,4 +95,12 @@
   background: none;
   margin: 0;
   padding: 0;
+}
+.game-counter {
+  position: absolute;
+  top: 30px; 
+  left: 40px;
+  font-size: var(--text-size-medium);
+  color: var(--color-pink);
+  font-weight: 700;
 }
