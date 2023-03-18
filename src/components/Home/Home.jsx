@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 import "./Home.css";
 
-import picLogo from "../images/picLogo.png";
+import picLogo from "../../assets/images/picLogo.png";
 
 import { Link } from "react-router-dom";
 

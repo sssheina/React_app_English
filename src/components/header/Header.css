@@ -48,6 +48,10 @@
   border-bottom: 3px solid var(--color-pinklite);
   padding: 6px 0;
 }
+
+.menuA:active {
+  transform: scale(0.5);
+}
 .logoA:focus, .menuA:focus {
   outline: none;
   border-bottom: 3px solid var(--color-pinklite);           

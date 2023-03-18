@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 import "./Game.css";
-import "../styles/variables.css";
+import "../../assets/styles/variables.css";
 
 // import GetServices from "../Services/GetServices";
 // import Card from "../components/Card/Card";
@@ -132,7 +132,7 @@ export default function Game() {
           {pressed ? (
             <p className="game-translate">{word.russian}</p>
           ) : (
-            <button className="game-button"> translate</button>
+            <p className="game-buttonName"> translate</p>
           )}
 
           {/* { !pressed && <div className="card-buttons"><button className="cardEditButton">🖋</button><button className="cardDeleteButton" >🗑</button></div>} */}

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 import "./NoMatch.css";
 
-import img404 from "../images/404c.png";
+import img404 from "../../assets/images/404c.png";
 
 function NoMatch() {
     return (

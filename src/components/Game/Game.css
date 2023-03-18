@@ -10,7 +10,7 @@
 .game-card {
   display: flex;
   flex-direction: column;
-  width: 300px;
+  width: 320px;
   height: 400px;
   margin: 50px 100px;
   align-items: center;
@@ -35,23 +35,23 @@
   cursor: pointer;
   font-family: "Montserrat";
   color: var(--color-pink);
+  padding: 20px;
 }
 
-.game-buttonName {
-  background-color: var(--color-pinklite);
-  padding: 20px;
-  border-radius: 10px;
-  cursor: pointer;
-  font-size: var(--text-size-medium);
-  font-weight: 700;
-  font-family: "Montserrat";
-  color: var(--color-pink);
+.game-button {
+  border: none;
+  border-radius: 15px;
+  color: var(--color-gray);
+  font-size: var(--text-size-large);
+  margin: 1rem auto;
+  padding: 0.8rem 2rem;
+  text-align: center;
 }
 
 .game-prev {
   background-color: var(--color-pinklite);
   padding: 20px;
-  border:none;
+  border: none;
   border-radius: 10px;
   margin-left: 300px;
   cursor: pointer;
@@ -60,12 +60,22 @@
   font-family: "Montserrat";
   color: var(--color-pink);
 }
-
-.game-prev:hover, .game-next:hover, .game-buttonName:hover{
+.game-buttonName {
+  background-color: var(--color-pinklite);
+  padding: 20px;
+  border-radius: 15px;
+  font-family: "Montserrat";
+  font-size: var(--text-size-medium);
+  font-weight: 700;
+}
+.game-prev:hover,
+.game-next:hover,
+.game-buttonName:hover {
   background-color: var(--color-white);
 }
 
-.game-prev:focus, .game-next:focus {
+.game-prev:focus,
+.game-next:focus {
   outline: none;
   box-shadow: 0 0 0 3px var(--color-white);
 }
@@ -76,7 +86,7 @@
 .game-next {
   background-color: var(--color-pinklite);
   padding: 20px;
-  border:none;
+  border: none;
   border-radius: 10px;
   margin-right: 300px;
   cursor: pointer;
@@ -84,17 +94,6 @@
   font-weight: 700;
   font-family: "Montserrat";
   color: var(--color-pink);
-}
-
-.game-button {
-  color: var(--color-gray);
-  font-size: var(--text-size-large);
-  text-align: center;
-
-  margin: 1rem auto;
-  padding: 0.8rem 2rem;
-  border: none;
-  border-radius: 15px;
 }
 
 .translation {
@@ -106,7 +105,7 @@
 }
 .game-counter {
   position: absolute;
-  top: 30px; 
+  top: 30px;
   left: 40px;
   font-size: var(--text-size-medium);
   color: var(--color-pink);

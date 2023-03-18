@@ -70,9 +70,7 @@ h2 {
   /* font-size: var(--text-size-large); */
   cursor: pointer;
 }
-.cardEditButton:hover {
-  /* border:var(--color-pink); */
-}
+
 
 .cardDeleteButton {
   height: var(--min-tap-target-height);
@@ -86,9 +84,7 @@ h2 {
   cursor: pointer;
 }
 
-.cardDeleteButton:hover {
-  /* background-color:rgb(254, 157, 148); */
-}
+
 
 .cardCancelButton {
   height: var(--min-tap-target-height);
@@ -97,9 +93,7 @@ h2 {
   border-radius: 5px;
   cursor: pointer;
 }
-.cardCancelButton:hover {
-  /* background-color:#f8c89e; */
-}
+
 
 .icon {
   width: 40px;

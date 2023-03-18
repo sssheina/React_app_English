@@ -2,13 +2,13 @@ import React, { useState } from "react";
 
 
 import "./Card.css";
-import "../styles/variables.css";
+import "../../assets/styles/variables.css";
 
 // import back_pink from "../images/back_pink-pink.png";
-import back_pink from "../images/back_pink-pink.png";
-import delete_pink from "../images/delete_pink.png";
-import edit_pink from "../images/edit_pink.png";
-import save_pink from "../images/save_pink-pink.png";
+import back_pink from "../../assets/images/back_pink-pink.png";
+import delete_pink from "../../assets/images/delete_pink.png";
+import edit_pink from "../../assets/images/edit_pink.png";
+import save_pink from "../../assets/images/save_pink-pink.png";
 
 export default function Card(props) {
   // const [pressed, setPressed] = useState(false);

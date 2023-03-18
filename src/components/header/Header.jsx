@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 import "./Header.css";
 
-import logo from "../images/logo_1.png";
+import logo from "../../assets/images/logo_1.png";
 
 function Header() {
   return (
