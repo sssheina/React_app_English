@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-
+// import React, { useState } from "react";
+import React from "react";
 import Card from "./components/Сard/Сard";
 import cards from "./utils/cards";
 import "./components/styles/variables.css";
@@ -14,6 +14,7 @@ function Main() {
           <div className="cards-map">
             {cards.map((card) => (
               <Card
+                key={card.id}
                 english={card.english}
                 transcription={card.transcription}
                 russian={card.russian}
@@ -23,6 +24,7 @@ function Main() {
             ))}
           </div>
           </div>
+          
           )}
 
           export default Main;

@@ -44,11 +44,14 @@
   color: var(--color-pink);
 }
 .menuA:hover {
-  border-top: 3px solid rgb(253, 222, 222);
-  border-bottom: 3px solid rgb(253, 222, 222);
+  border-top: 3px solid var(--color-pinklite);
+  border-bottom: 3px solid var(--color-pinklite);
   padding: 6px 0;
 }
-
+.logoA:focus, .menuA:focus {
+  outline: none;
+  border-bottom: 3px solid var(--color-pinklite);           
+}
 .menuItem {
   list-style-type: none;
   padding-left: 20px;

@@ -93,12 +93,8 @@ h2 {
 .cardCancelButton {
   height: var(--min-tap-target-height);
   width: var(--min-tap-target-width);
-  /* background-color:#f7b276;
-    color: var(--color-white); */
   border: none;
   border-radius: 5px;
-  /* font-weight:800;
-    font-size: var(--text-size-large); */
   cursor: pointer;
 }
 .cardCancelButton:hover {
@@ -118,4 +114,11 @@ input {
   padding: 8px 10px;
   border-radius: 3px;
   transition: all 0.3s ease;
+}
+
+input:focus, .cardCancelButton:focus, 
+.cardDeleteButton:focus, .cardEditButton:focus,
+.cardSaveButton:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--color-pinklite);
 }

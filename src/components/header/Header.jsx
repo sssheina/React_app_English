@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 import "./Header.css";
@@ -15,7 +15,7 @@ function Header() {
         }}
       >
         <img class="logo" src={logo} alt="logo" />
-        <Link to="/home" className="logoA">
+        <Link to="/" className="logoA">
           ENGLISH CARDS
         </Link>
       </motion.div>
@@ -27,7 +27,7 @@ function Header() {
               scale: 1.2,
             }}
           >
-            <Link to="/home" className="menuA">
+            <Link to="/" className="menuA">
               HOME
             </Link>
           </motion.li>
@@ -51,16 +51,7 @@ function Header() {
               GAME
             </Link>
           </motion.li>
-          <motion.li
-            className="menuItem"
-            whileHover={{
-              scale: 1.2,
-            }}
-          >
-            <Link to="*" className="menuA">
-              ERROR
-            </Link>
-          </motion.li>
+         
         </ul>
       </nav>
     </div>

@@ -65,6 +65,14 @@
   background-color: var(--color-white);
 }
 
+.game-prev:focus, .game-next:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--color-white);
+}
+.game-buttonName:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--color-white);
+}
 .game-next {
   background-color: var(--color-pinklite);
   padding: 20px;

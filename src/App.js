@@ -8,10 +8,8 @@ import NoMatch from "./components/NoMatch/NoMatch";
 import Home from "./components/Home/Home";
 
 import {
-  BrowserRouter as Router,
   Routes,
   Route,
-  Link
 } from "react-router-dom";
 
 import "./App.css";
@@ -19,21 +17,19 @@ import "./App.css";
 
 function App() {
   return (
-    <Router>
+    
       <div className="App">
       <Header />
 
       <Routes>
-      <Route path="/words" element={<Main />} />
-      <Route path="/game" element={<Game />} />
-      <Route path="/home" element={<Home />} />
-      <Route path="/Week_26_Project_Eng_2" element={<Home />} />
+      <Route exact path="/words" element={<Main />} />
+      <Route exact path="/game" element={<Game />} />
+      <Route exact path="/" element={<Home />} />
       <Route path="*" element={<NoMatch />} />
       </Routes>
 
       <Footer />
     </div>
-    </Router>
   );
 }
 

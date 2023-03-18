@@ -32,20 +32,20 @@ export default function Card(props) {
       {isEdit ? (
         <>
           <p className="card-item">
-            <input type="text" value={inputText.english} name={english} />
+            <input type="text" value={inputText.english} name={english} className="card-input"/>
           </p>
           <p className="card-item">
             <input
               type="text"
               value={inputText.transcription}
-              name={transcription}
+              name={transcription} className="card-input"
             />
           </p>
           <p className="card-item">
-            <input type="text" value={inputText.russian} name={russian} />
+            <input type="text" value={inputText.russian} name={russian} className="card-input" />
           </p>
           <p className="card-item">
-            <input type="text" value={inputText.tags} name={tags} />
+            <input type="text" value={inputText.tags} name={tags} className="card-input"/>
           </p>
           <div className="card-buttons">
             <div className="cardSaveButton">

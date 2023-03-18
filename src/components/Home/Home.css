@@ -35,6 +35,11 @@ text-align: start;
     text-decoration: none;
     color: var(--color-pink);
 }
+.button__words-link:focus, .button__game-link:focus, 
+.button__words:focus, .button__game:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--color-pinklite);
+}
 .button__words, .button__game {
     background-color: var(--color-graylite);
     padding: 20px;

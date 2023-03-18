@@ -14,7 +14,7 @@ export default function Game() {
   let word = Array[index];
   // const [posts, setPosts] = useState([]);
   // const [arrId, setArrId] = useState([]);
-  const [counter, setCounter] = useState(0);
+  const [counter, setCounter] = useState(1);
   // const { english, transcription, russian } = props;
 
   //2.Вызвали эту обработку в usEffect
@@ -42,7 +42,7 @@ export default function Game() {
   //NEXT card
   const handleNextClick = () => {
     if (index + 1 >= Array.length) {
-      setIndex(0);
+      setIndex(1);
     } else setIndex(index + 1);
 
     setNextClick(!clickedNext);
@@ -51,10 +51,10 @@ export default function Game() {
 
   const [clickedNext, setNextClick] = useState(false);
 
-  let pressedNextArrow;
-  if (clickedNext) {
-    pressedNextArrow = "pressedNextArrow";
-  }
+  // let pressedNextArrow;
+  // if (clickedNext) {
+  //   pressedNextArrow = "pressedNextArrow";
+  // }
 
   //Prev card
 
@@ -64,14 +64,15 @@ export default function Game() {
     } else setIndex(index - 1);
 
     setPrevClick(!clickedPrev);
+    handleCount2();
   };
 
   const [clickedPrev, setPrevClick] = useState(false);
 
-  let pressedPrevArrow;
-  if (clickedPrev) {
-    pressedPrevArrow = "pressedPrevArrow";
-  }
+  // let pressedPrevArrow;
+  // if (clickedPrev) {
+  //   pressedPrevArrow = "pressedPrevArrow";
+  // }
 
   // const handleChange = () => {
   //   const id = posts[index].id;
@@ -85,6 +86,10 @@ export default function Game() {
 
   const handleCount = () => {
     setCounter(counter + 1);
+  };
+
+  const handleCount2 = () => {
+    setCounter(counter - 1);
   };
 
   const handleChanges = () => {
@@ -127,7 +132,7 @@ export default function Game() {
           {pressed ? (
             <p className="game-translate">{word.russian}</p>
           ) : (
-            <span className="game-buttonName">translate</span>
+            <button className="game-button"> translate</button>
           )}
 
           {/* { !pressed && <div className="card-buttons"><button className="cardEditButton">🖋</button><button className="cardDeleteButton" >🗑</button></div>} */}
