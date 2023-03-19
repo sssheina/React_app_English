@@ -1,17 +1,18 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 
 import "./Card.css";
 import "../../assets/styles/variables.css";
 
-// import back_pink from "../images/back_pink-pink.png";
+
 import back_pink from "../../assets/images/back_pink-pink.png";
 import delete_pink from "../../assets/images/delete_pink.png";
 import edit_pink from "../../assets/images/edit_pink.png";
 import save_pink from "../../assets/images/save_pink-pink.png";
 
 export default function Card(props) {
-  // const [pressed, setPressed] = useState(false);
+  
   const { english, transcription, russian, tags } = props;
   const [isEdit, setIsEdit] = useState(false);
   const [inputText, setInputText] = useState(props);
@@ -24,8 +25,6 @@ export default function Card(props) {
     setInputText(props);
     setIsEdit(!isEdit);
   }
-  // let classCardButtons;
-  // if (pressed) classCardButtons = "selected";
 
   return (
     <div className="card-word">
@@ -48,12 +47,17 @@ export default function Card(props) {
             <input type="text" value={inputText.tags} name={tags} className="card-input"/>
           </p>
           <div className="card-buttons">
-            <div className="cardSaveButton">
+            <motion.div className="cardSaveButton" whileHover={{
+              scale: 1.1,
+            }}>
               <img src={save_pink} className="save icon" alt="Save"></img>
-            </div>
-            <div className="cardCancelButton" onClick={onCancelClick}>
+            </motion.div>
+
+            <motion.div className="cardCancelButton" onClick={onCancelClick} whileHover={{
+              scale: 1.1,
+            }}>
               <img src={back_pink} className="back icon" alt="back"></img>
-            </div>
+            </motion.div>
           </div>
         </>
       ) : (
@@ -70,12 +74,16 @@ export default function Card(props) {
           </p>
 
           <div className="card-buttons">
-            <div className="cardEditButton" onClick={onEditClick}>
+            <motion.div className="cardEditButton" onClick={onEditClick} whileHover={{
+              scale: 1.1,
+            }}>
               <img src={edit_pink} className="edit icon" alt="edit"></img>
-            </div>
-            <div className="cardDeleteButton">
+            </motion.div>
+            <motion.div className="cardDeleteButton" whileHover={{
+              scale: 1.1,
+            }}>
               <img src={delete_pink} className="delete icon" alt="delete"></img>
-            </div>
+            </motion.div>
           </div>
         </>
       )}

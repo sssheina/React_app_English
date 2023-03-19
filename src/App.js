@@ -1,5 +1,6 @@
 import React from "react";
-// import Card from "./components/Сard/Сard";
+
+
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Game from "./components/Game/Game";
@@ -22,10 +23,10 @@ function App() {
       <Header />
 
       <Routes>
-      <Route exact path="/words" element={<Main />} />
-      <Route exact path="/game" element={<Game />} />
-      <Route exact path="/" element={<Home />} />
-      <Route path="*" element={<NoMatch />} />
+        <Route exact path="/words" element={<Main />} />
+        <Route exact path="/game" element={<Game />} />
+        <Route exact path="/" element={<Home />} />
+        <Route path="*" element={<NoMatch />} />
       </Routes>
 
       <Footer />

@@ -40,6 +40,10 @@ text-align: start;
     outline: none;
     box-shadow: 0 0 0 3px var(--color-pinklite);
 }
+
+.button__words:active, .button__game:active {
+    box-shadow: 2px 2px 5px var(--color-pink);
+}
 .button__words, .button__game {
     background-color: var(--color-graylite);
     padding: 20px;

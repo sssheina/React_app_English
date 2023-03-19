@@ -48,39 +48,27 @@ h2 {
 .cardSaveButton {
   height: var(--min-tap-target-height);
   width: var(--min-tap-target-width);
-  /* background-color:#66dbba; */
   border: none;
   border-radius: 5px;
-  /* color: var(--color-white); */
-  /* font-weight:800; */
-  /* font-size: 19px; */
   cursor: pointer;
 }
-.cardSaveButton:hover {
-  background-color: #8ee1c9;
-}
+
 .cardEditButton {
   height: var(--min-tap-target-height);
   width: var(--min-tap-target-width);
-  /* background-color:#f7b276; */
-  /* color: var(--color-white); */
   border: none;
   border-radius: 5px;
   font-weight: 800;
-  /* font-size: var(--text-size-large); */
   cursor: pointer;
 }
+
 
 
 .cardDeleteButton {
   height: var(--min-tap-target-height);
   width: var(--min-tap-target-width);
-  /* background-color:rgb(253, 116, 104); */
-  /* color: var(--color-white); */
   border: none;
   border-radius: 5px;
-  /* font-weight:800;
-    font-size: var(--text-size-large); */
   cursor: pointer;
 }
 
@@ -115,4 +103,9 @@ input:focus, .cardCancelButton:focus,
 .cardSaveButton:focus {
   outline: none;
   box-shadow: 0 0 0 3px var(--color-pinklite);
+}
+
+.cardEditButton:active, .cardDeleteButton:active, 
+.cardSaveButton:active, .cardCancelButton:active {
+  box-shadow: 2px 2px 5px var(--color-pink);
 }

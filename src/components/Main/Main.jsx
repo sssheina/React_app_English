@@ -1,10 +1,9 @@
-// import React, { useState } from "react";
 import React from "react";
 import Card from "../Сard/Сard";
 import cards from "../../utils/cards";
 import "../../assets/styles/variables.css";
 
-// import Array from "../../utils/cards";
+
 
 
 function Main() {
