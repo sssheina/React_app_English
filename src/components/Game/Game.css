@@ -47,6 +47,10 @@
   padding: 0.8rem 2rem;
   text-align: center;
 }
+.game-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--color-pinklite);
+}
 
 .game-prev {
   background-color: var(--color-pinklite);
