@@ -14,7 +14,6 @@ function NoMatch() {
         alt="Error" 
         animate={{rotate: 360}}
         transition={{duration: 1,
-          // repeat: 1,
           repeatDelay: 0.5,
           repeatType: 'reverse',
           type: 'tween',

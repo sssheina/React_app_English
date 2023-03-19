@@ -60,7 +60,6 @@
   list-style-type: none;
   padding-left: 20px;
   font-size: var(--text-size-medium);
-  /* color: var(--color-pink); */
   font-weight: 700;
   text-decoration: none;
 }

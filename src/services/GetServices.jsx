@@ -1,4 +1,4 @@
-import ErrorPage from './ErrorPage';
+import NoMatch from "../components/NoMatch/NoMatch";
 
 class GetServices {
   static async getWord() {
@@ -9,8 +9,8 @@ class GetServices {
   catch(err) {
     return (
       <>
-        <div>Ошибка: {err.message}</div>
-        <ErrorPage />
+        <div>Error: {err.message}</div>
+        <NoMatch />
       </>
     );
   }
