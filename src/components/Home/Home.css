@@ -33,6 +33,7 @@ text-align: start;
 .button__words-link, .button__game-link {
     text-decoration: none;
     color: var(--color-pink);
+    padding: 20px;
 }
 .button__words-link:focus, .button__game-link:focus, 
 .button__words:focus, .button__game:focus {
