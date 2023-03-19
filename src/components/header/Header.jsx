@@ -1,9 +1,9 @@
-import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
-import "./Header.css";
+import './Header.css';
 
-import logo from "../../assets/images/logo_1.png";
+import logo from '../../assets/images/logo_1.png';
 
 function Header() {
   return (

@@ -1,8 +1,8 @@
-import ErrorPage from "./ErrorPage";
+import ErrorPage from './ErrorPage';
 
 class GetServices {
   static async getWord() {
-    const response = await fetch("http://itgirlschool.justmakeit.ru/api/words");
+    const response = await fetch('http://itgirlschool.justmakeit.ru/api/words');
     const data = await response.json();
     return data;
   }

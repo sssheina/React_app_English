@@ -23,7 +23,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "eject": "react-scripts eject",
-    "eslint": "./node_modules/.bin/eslint . --fix"
+    "eslint": "eslint --fix --ext .js,.jsx ."
   },
   "eslintConfig": {
     "extends": [

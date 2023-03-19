@@ -1,25 +1,25 @@
-import React from "react";
+import React from 'react';
 
 
-import Footer from "./components/Footer/Footer";
-import Header from "./components/Header/Header";
-import Game from "./components/Game/Game";
-import Main from "./components/Main/Main";
-import NoMatch from "./components/NoMatch/NoMatch";
-import Home from "./components/Home/Home";
+import Footer from './components/Footer/Footer';
+import Header from './components/Header/Header';
+import Game from './components/Game/Game';
+import Main from './components/Main/Main';
+import NoMatch from './components/NoMatch/NoMatch';
+import Home from './components/Home/Home';
 
 import {
   Routes,
   Route,
-} from "react-router-dom";
+} from 'react-router-dom';
 
-import "./App.css";
+import './App.css';
 
 
 function App() {
   return (
     
-      <div className="App">
+    <div className="App">
       <Header />
 
       <Routes>

@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react';
 
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 
-import "./Home.css";
+import './Home.css';
 
-import picLogo from "../../assets/images/picLogo.png";
+import picLogo from '../../assets/images/picLogo.png';
 
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 function Home() {
   return (
@@ -75,9 +75,9 @@ function Home() {
             duration: 1,
             // delay: 0.5,
             repeatDelay: 0.5,
-            repeatType: "reverse",
-            type: "tween",
-            ease: "linear",
+            repeatType: 'reverse',
+            type: 'tween',
+            ease: 'linear',
           }}
         />
       </div>
