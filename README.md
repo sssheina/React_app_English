@@ -33,7 +33,7 @@ Project was created by a team of developers and designers from DESIGN AND DEVELO
 <br>
 
 
-https://user-images.githubusercontent.com/108290460/228349902-803af8c3-e7b2-48de-a925-9289fda55acd.mov
+https://user-images.githubusercontent.com/108290460/228352734-fd986d87-fd9a-4afc-8b8c-fb06e31d55b9.mov
 
 
 <br>
@@ -43,9 +43,9 @@ https://user-images.githubusercontent.com/108290460/228349902-803af8c3-e7b2-48de
 >Click the image below to view our website!
 
 
-[<img width="300" src="https://user-images.githubusercontent.com/108290460/228350211-39a72cce-117b-460a-b0b0-664157a2d82a.png"/>](https://sssheina.github.io/Week_26_Project_Eng_2/)
 [<img width="300" src="https://user-images.githubusercontent.com/108290460/228350231-f85ac0f1-e50b-4dbb-bdec-4217fde10b3c.png"/>](https://sssheina.github.io/Week_26_Project_Eng_2/)
 [<img width="300" src="https://user-images.githubusercontent.com/108290460/228350241-2666c38a-9f90-48db-af6b-cad79d4b59b5.png"/>](https://sssheina.github.io/Week_26_Project_Eng_2/)
+[<img width="300" src="https://user-images.githubusercontent.com/108290460/228353113-eb4e92b1-3061-4b6d-828a-358f8f11354c.png"/>](https://sssheina.github.io/Week_26_Project_Eng_2/)
 <br>
 <br>
 
