@@ -16,7 +16,7 @@
      <img src="https://img.shields.io/badge/Framer-292b2d?style=for-the-badge&logo=Framer&logoColor=white">
      <img src="https://img.shields.io/badge/node.js-8CCB5E?style=for-the-badge&logo=node.js&logoColor=white">
      <img src="https://img.shields.io/badge/npm-%23E34F26?style=for-the-badge&logo=npm&logoColor=white">
-    
+    <img src="https://img.shields.io/badge/eslint-%23E34F26?style=for-the-badge&logo=eslint&logoColor=white">
     
 </p>
 <br>
