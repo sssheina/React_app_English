@@ -27,7 +27,7 @@ The project was created to practise skills in React. DESIGN AND DEVELOPMENT CREA
 <br>
 
 ## Brief overview video:
->For a brief explanation about the landing page for stylist Clara Ting, you can watch the following video.
+>For a brief you can watch the following video:
 <br>
 
 
@@ -37,8 +37,8 @@ https://user-images.githubusercontent.com/108290460/228352734-fd986d87-fd9a-4afc
 <br>
 <br>
 
-## View our Website:
->Click the image below to view our website!
+## View this App:
+>Click the image below to view this App!
 
 
 [<img width="300" src="https://user-images.githubusercontent.com/108290460/228350231-f85ac0f1-e50b-4dbb-bdec-4217fde10b3c.png"/>](https://sssheina.github.io/Week_26_Project_Eng_2/)
