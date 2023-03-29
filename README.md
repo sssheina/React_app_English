@@ -1,4 +1,4 @@
-# App React for learning English words
+# App React for learning English words 🗽📖
 
 <br>
 
