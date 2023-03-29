@@ -15,6 +15,9 @@
     <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white">
     <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E">
     <img src="https://img.shields.io/badge/react-292b2d?style=for-the-badge&logo=react&logoColor=77d0f2">
+     <img src="https://img.shields.io/badge/Framer-292b2d?style=for-the-badge&logo=Framer&logoColor=white">
+    
+Framer Motion
     
 </p>
 <br>
@@ -22,7 +25,8 @@
 
 ## About The Project
 
-The project was created to practise skills in React. DESIGN AND DEVELOPMENT CREATORS.
+The project was created to practise skills in React. It is assumed that the data will be retrieved from the API. For the animation used an open source motion library Framer Motion.
+DESIGN AND DEVELOPMENT CREATORS.
 <br>
 <br>
 
