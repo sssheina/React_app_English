@@ -1,11 +1,9 @@
-# App React for learning English words 🗽📖
+# 🗽📖 App React for learning English words 
 
 <br>
 
 <p align="center">
-    <img src="https://img.shields.io/github/issues/sssheina/Week_26_Project_Eng_2">
-    <img src="https://img.shields.io/github/forks/sssheina/Week_26_Project_Eng_2">
-    <img src="https://img.shields.io/github/stars/sssheina/Week_26_Project_Eng_2">
+     <img src="https://img.shields.io/github/stars/sssheina/Week_26_Project_Eng_2">
     
 </p>
 
@@ -17,7 +15,6 @@
     <img src="https://img.shields.io/badge/react-292b2d?style=for-the-badge&logo=react&logoColor=77d0f2">
      <img src="https://img.shields.io/badge/Framer-292b2d?style=for-the-badge&logo=Framer&logoColor=white">
     
-Framer Motion
     
 </p>
 <br>
