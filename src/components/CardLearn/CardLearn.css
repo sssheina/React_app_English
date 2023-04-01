@@ -1,0 +1,7 @@
+.cardLearn {
+    color: var(--color-pinklite);
+    align-self: center;
+    margin-top: 170px;
+    font-size: var(--text-size-medium);
+    font-weight: 800;
+  }

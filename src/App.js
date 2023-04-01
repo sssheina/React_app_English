@@ -3,7 +3,7 @@ import React from 'react';
 
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
-import Game from './components/Game/Game';
+import CardLearn from './components/CardLearn/CardLearn';
 import Main from './components/Main/Main';
 import NoMatch from './components/NoMatch/NoMatch';
 import Home from './components/Home/Home';
@@ -17,6 +17,7 @@ import './App.css';
 
 
 function App() {
+
   return (
     
     <div className="App">
@@ -24,7 +25,7 @@ function App() {
 
       <Routes>
         <Route exact path="/words" element={<Main />} />
-        <Route exact path="/game" element={<Game />} />
+        <Route exact path="/game" element={<CardLearn />} />  
         <Route exact path="/" element={<Home />} />
         <Route path="*" element={<NoMatch />} />
       </Routes>

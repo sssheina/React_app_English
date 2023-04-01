@@ -1,11 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;900&display=swap");
 
+.gameMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+}
+.gameLearn {
+  align-self: center;
+  margin-top: 10px;
+  background-color: var(--color-pinklite);
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: var(--text-size-medium);
+  font-weight: 700;
+  font-family: "Montserrat";
+  color: var(--color-pink);
+}
 .game {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin: 170px auto;
+  margin: 10px auto;
 }
 .game-card {
   display: flex;
@@ -49,7 +69,7 @@
 }
 .game-button:focus {
   outline: none;
-  }
+}
 
 .game-prev {
   background-color: var(--color-pinklite);
@@ -72,12 +92,13 @@
   font-weight: 700;
   cursor: pointer;
 }
+.gameLearn:hover,
 .game-prev:hover,
 .game-next:hover,
 .game-buttonName:hover {
   background-color: var(--color-white);
 }
-
+.gameLearn:focus,
 .game-prev:focus,
 .game-next:focus {
   outline: none;
@@ -90,7 +111,9 @@
 .game-buttonName:active {
   box-shadow: 2px 2px 5px var(--color-pink);
 }
-.game-prev:active, .game-next:active {
+.gameLearn:active,
+.game-prev:active,
+.game-next:active {
   box-shadow: 2px 2px 5px var(--color-pinklite);
 }
 .game-next {
