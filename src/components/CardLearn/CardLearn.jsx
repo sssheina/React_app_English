@@ -5,7 +5,7 @@ import './CardLearn.css';
 import '../../assets/styles/variables.css';
 
 function CardLearn() {
-  const [learnWords, setLearnWords] = useState(1);
+  const [learnWords, setLearnWords] = useState(0);
 
   const handleLearned = () => {
     setLearnWords(learnWords + 1);

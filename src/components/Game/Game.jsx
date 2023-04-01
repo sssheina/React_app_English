@@ -1,17 +1,17 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { motion } from 'framer-motion';
+import React, { useState, useEffect, useRef } from "react";
+import { motion } from "framer-motion";
 
-import './Game.css';
-import '../../assets/styles/variables.css';
+import "./Game.css";
+import "../../assets/styles/variables.css";
 
-import Array from '../../utils/cards';
+import Array from "../../utils/cards";
 
 export default function Game(props) {
   const [index, setIndex] = useState(0);
   const [pressed, setPressed] = useState(false);
   const [counter, setCounter] = useState(1);
-  const [viewCard, setViewCard] = useState(1);
-  
+  const [viewCard, setViewCard] = useState(false);
+
   let word = Array[index];
 
   const handleNextClick = () => {
@@ -20,7 +20,7 @@ export default function Game(props) {
     } else setIndex(index + 1);
 
     setNextClick(!clickedNext);
-    
+
     setViewCard(false);
     setPressed(false);
     handleCount();
@@ -34,7 +34,7 @@ export default function Game(props) {
     } else setIndex(index - 1);
 
     setPrevClick(!clickedPrev);
-    
+
     setViewCard(false);
     setPressed(false);
     handleCount2();
@@ -68,10 +68,11 @@ export default function Game(props) {
 
   return (
     <div className="gameMain">
-      <button className="gameLearn" onClick={handleViewCard} ref={ref} >Learned word</button>
-      
+      <button className="gameLearn" onClick={handleViewCard} ref={ref}>
+        Learned word
+      </button>
+
       <div className="game">
-      
         <motion.button
           className="game-prev"
           onClick={handlePrevClick}
@@ -112,7 +113,7 @@ export default function Game(props) {
                   scale: 1.1,
                 }}
               >
-                {' '}
+                {" "}
                 translate
               </motion.p>
             )}
