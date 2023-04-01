@@ -1,10 +1,10 @@
-import React, { useState, useEffect, useRef } from "react";
-import { motion } from "framer-motion";
+import React, { useState, useEffect, useRef } from 'react';
+import { motion } from 'framer-motion';
 
-import "./Game.css";
-import "../../assets/styles/variables.css";
+import './Game.css';
+import '../../assets/styles/variables.css';
 
-import Array from "../../utils/cards";
+import Array from '../../utils/cards';
 
 export default function Game(props) {
   const [index, setIndex] = useState(0);
@@ -113,7 +113,7 @@ export default function Game(props) {
                   scale: 1.1,
                 }}
               >
-                {" "}
+                {' '}
                 translate
               </motion.p>
             )}
