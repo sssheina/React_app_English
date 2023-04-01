@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# 🗽📖 App React for learning English words 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<br>
 
-## Available Scripts
+<p align="center">
+     <img src="https://img.shields.io/github/stars/sssheina/Week_26_Project_Eng_2">
+    
+</p>
+
+<p align="center">Tech Stack:</p>
+<p align="center">
+    <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"> 
+    <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white">
+    <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E">
+    <img src="https://img.shields.io/badge/react-292b2d?style=for-the-badge&logo=react&logoColor=77d0f2">
+     <img src="https://img.shields.io/badge/Framer-292b2d?style=for-the-badge&logo=Framer&logoColor=white">
+     <img src="https://img.shields.io/badge/node.js-8CCB5E?style=for-the-badge&logo=node.js&logoColor=white">
+     <img src="https://img.shields.io/badge/npm-%23E34F26?style=for-the-badge&logo=npm&logoColor=white">
+    <img src="https://img.shields.io/badge/eslint-6600FF?style=for-the-badge&logo=eslint&logoColor=white">
+    
+</p>
+<br>
+<br>
+
+## About The Project
+
+The project was created to practise skills in React. It is assumed that the data will be retrieved from the API. For the animation used an open source motion library Framer Motion.
+DESIGN AND DEVELOPMENT CREATORS.
+<br>
+<br>
+
+## Brief overview video:
+>For a brief you can watch the following video:
+<br>
+
+
+https://user-images.githubusercontent.com/108290460/228352734-fd986d87-fd9a-4afc-8b8c-fb06e31d55b9.mov
+
+
+<br>
+<br>
+
+## View this App:
+>Click the image below to view this App!
+
+
+[<img width="300" src="https://user-images.githubusercontent.com/108290460/228350231-f85ac0f1-e50b-4dbb-bdec-4217fde10b3c.png"/>](https://sssheina.github.io/Week_26_Project_Eng_2/)
+[<img width="300" src="https://user-images.githubusercontent.com/108290460/228350241-2666c38a-9f90-48db-af6b-cad79d4b59b5.png"/>](https://sssheina.github.io/Week_26_Project_Eng_2/)
+[<img width="300" src="https://user-images.githubusercontent.com/108290460/228353113-eb4e92b1-3061-4b6d-828a-358f8f11354c.png"/>](https://sssheina.github.io/Week_26_Project_Eng_2/)
+<br>
+<br>
+
+## Getting started
 
 In the project directory, you can run:
+<p> `npm install`
+<p> `npm run start`
+  
+<br>
+<br>
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Contacts
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<a href="https://www.linkedin.com/in/veta-sheina-521666249" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
+  </a>
+<br>
+<br>
+📫 How to reach me: sviatlana.v.sheina@gmail.com
+<br><br>
