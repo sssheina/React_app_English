@@ -68,7 +68,7 @@ export default function Game(props) {
 
   return (
     <div className="gameMain">
-      <button className="gameLearn" onClick={handleViewCard} ref={ref}>
+      <button className="gameLearn" onClick={handleViewCard}>
         Learned word
       </button>
 
@@ -103,19 +103,20 @@ export default function Game(props) {
           </p>
 
           <div className="game-counter">{counter}</div>
-          <button className="game-button" onClick={handleChanges}>
+          <button className="game-button" onClick={handleChanges} >
             {pressed ? (
-              <p className="game-translate">{word.russian}</p>
+              <div className="game-translate">{word.russian}</div>
             ) : (
-              <motion.p
+              <motion.button
                 className="game-buttonName"
+                ref={ref}
                 whileHover={{
                   scale: 1.1,
                 }}
               >
                 {' '}
                 translate
-              </motion.p>
+              </motion.button>
             )}
           </button>
         </motion.div>

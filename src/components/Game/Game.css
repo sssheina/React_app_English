@@ -88,9 +88,11 @@
   padding: 20px;
   border-radius: 15px;
   font-family: "Montserrat";
-  font-size: var(--text-size-medium);
   font-weight: 700;
   cursor: pointer;
+  border: none;
+  color: var(--color-gray);
+  font-size: var(--text-size-medium);
 }
 .gameLearn:hover,
 .game-prev:hover,
@@ -98,6 +100,7 @@
 .game-buttonName:hover {
   background-color: var(--color-white);
 }
+
 .gameLearn:focus,
 .game-prev:focus,
 .game-next:focus {
