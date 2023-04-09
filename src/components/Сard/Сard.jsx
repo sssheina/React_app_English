@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import React, { useState, useEffect } from 'react';
 
 import './Card.css';
 import '../../assets/styles/variables.css';
@@ -13,9 +12,32 @@ export default function Card(props) {
   const { english, transcription, russian, tags } = props;
   const [isEdit, setIsEdit] = useState(false);
   const [inputText, setInputText] = useState(props);
+  const [isEmpty, setIsEmpty] = useState(true);
 
-  const onChange = (event) => setInputText(event.target.value);
+  const onChange = (event) => {
+    setInputText({
+      ...inputText,
+      [event.target.name]: event.target.value,
+    });
+  };
 
+  useEffect(() => {
+    if (
+      inputText.english === '' ||
+      inputText.transcription === '' ||
+      inputText.russian === '' ||
+      inputText.tags === ''
+    ) {
+      setIsEmpty(true);
+    } else {
+      setIsEmpty(false);
+    }
+  }, [inputText]);
+
+  const errorClass = (value) => {
+    return typeof value === 'string' && value.trim()  === '' ? 'error' : '';
+  };
+  
   function onEditClick() {
     setIsEdit(!isEdit);
   }
@@ -23,6 +45,21 @@ export default function Card(props) {
   function onCancelClick() {
     setInputText(props);
     setIsEdit(!isEdit);
+  }
+
+  //вывести в консоль сообщение с параметрами формы и закрыть режим редактирования
+  function onSaveClick() {
+    if (
+      inputText.english === '' ||
+      inputText.transcription === '' ||
+      inputText.russian === '' ||
+      inputText.tags === ''
+    ) {
+      alert('Error: Please fill in all the fields');
+    } else {
+      console.log('Form parameters:', inputText);
+      setIsEdit(false); // закрывает режим редактирования
+    }
   }
 
   return (
@@ -33,8 +70,8 @@ export default function Card(props) {
             <input
               type="text"
               value={inputText.english}
-              name={english}
-              className="card-input"
+              name="english"
+              className={`card-input ${errorClass(inputText.english)}`}
               onChange={onChange}
             />
           </p>
@@ -42,8 +79,8 @@ export default function Card(props) {
             <input
               type="text"
               value={inputText.transcription}
-              name={transcription}
-              className="card-input"
+              name="transcription"
+              className={`card-input ${errorClass(inputText.transcription)}`}
               onChange={onChange}
             />
           </p>
@@ -51,8 +88,8 @@ export default function Card(props) {
             <input
               type="text"
               value={inputText.russian}
-              name={russian}
-              className="card-input"
+              name="russian"
+              className={`card-input ${errorClass(inputText.russian)}`}
               onChange={onChange}
             />
           </p>
@@ -60,30 +97,25 @@ export default function Card(props) {
             <input
               type="text"
               value={inputText.tags}
-              name={tags}
-              className="card-input"
+              name="tags"
+              className={`card-input ${errorClass(inputText.tags)}`}
               onChange={onChange}
             />
           </p>
           <div className="card-buttons">
-            <motion.div
-              className="cardSaveButton"
-              whileHover={{
-                scale: 1.1,
-              }}
+            <div
+              className={`cardSaveButton ${isEmpty ? 'disabled' : ''}`}
+              onClick={onSaveClick}
             >
               <img src={save_pink} className="save icon" alt="Save"></img>
-            </motion.div>
+            </div>
 
-            <motion.div
+            <div
               className="cardCancelButton"
               onClick={onCancelClick}
-              whileHover={{
-                scale: 1.1,
-              }}
             >
               <img src={back_pink} className="back icon" alt="back"></img>
-            </motion.div>
+            </div>
           </div>
         </>
       ) : (
@@ -100,23 +132,15 @@ export default function Card(props) {
           </p>
 
           <div className="card-buttons">
-            <motion.div
+            <div
               className="cardEditButton"
               onClick={onEditClick}
-              whileHover={{
-                scale: 1.1,
-              }}
             >
               <img src={edit_pink} className="edit icon" alt="edit"></img>
-            </motion.div>
-            <motion.div
-              className="cardDeleteButton"
-              whileHover={{
-                scale: 1.1,
-              }}
-            >
+            </div>
+            <div className="cardDeleteButton">
               <img src={delete_pink} className="delete icon" alt="delete"></img>
-            </motion.div>
+            </div>
           </div>
         </>
       )}

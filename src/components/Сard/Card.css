@@ -91,7 +91,7 @@ h2 {
 input {
   font-family: "Montserrat";
   color: var(--color-gray);
-  border: 1px solid var(--color-pink);
+  border: 1px solid var(--color-gray);
   font-size: 15px;
   padding: 8px 10px;
   border-radius: 3px;
@@ -108,4 +108,8 @@ input:focus, .cardCancelButton:focus,
 .cardEditButton:active, .cardDeleteButton:active, 
 .cardSaveButton:active, .cardCancelButton:active {
   box-shadow: 2px 2px 5px var(--color-pink);
+}
+
+.error {
+  border: 1px solid red;
 }
