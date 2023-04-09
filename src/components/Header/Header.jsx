@@ -9,12 +9,12 @@ function Header() {
   return (
     <div className="header">
       <motion.div
-        class="logoBlock"
+        className="logoBlock"
         whileHover={{
           scale: 1.03,
         }}
       >
-        <img class="logo" src={logo} alt="logo" />
+        <img className="logo" src={logo} alt="logo" />
         <Link to="/" className="logoA">
           ENGLISH CARDS
         </Link>
