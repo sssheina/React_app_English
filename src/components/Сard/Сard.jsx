@@ -35,9 +35,9 @@ export default function Card(props) {
   }, [inputText]);
 
   const errorClass = (value) => {
-    return typeof value === 'string' && value.trim()  === '' ? 'error' : '';
+    return typeof value === 'string' && value.trim() === '' ? 'error' : '';
   };
-  
+
   function onEditClick() {
     setIsEdit(!isEdit);
   }
@@ -63,83 +63,77 @@ export default function Card(props) {
   }
 
   return (
-    <div className="card-word">
+    <div className='card-word'>
       {isEdit ? (
         <>
-          <p className="card-item">
+          <p className='card-item'>
             <input
-              type="text"
+              type='text'
               value={inputText.english}
-              name="english"
+              name='english'
               className={`card-input ${errorClass(inputText.english)}`}
               onChange={onChange}
             />
           </p>
-          <p className="card-item">
+          <p className='card-item'>
             <input
-              type="text"
+              type='text'
               value={inputText.transcription}
-              name="transcription"
+              name='transcription'
               className={`card-input ${errorClass(inputText.transcription)}`}
               onChange={onChange}
             />
           </p>
-          <p className="card-item">
+          <p className='card-item'>
             <input
-              type="text"
+              type='text'
               value={inputText.russian}
-              name="russian"
+              name='russian'
               className={`card-input ${errorClass(inputText.russian)}`}
               onChange={onChange}
             />
           </p>
-          <p className="card-item">
+          <p className='card-item'>
             <input
-              type="text"
+              type='text'
               value={inputText.tags}
-              name="tags"
+              name='tags'
               className={`card-input ${errorClass(inputText.tags)}`}
               onChange={onChange}
             />
           </p>
-          <div className="card-buttons">
+          <div className='card-buttons'>
             <div
               className={`cardSaveButton ${isEmpty ? 'disabled' : ''}`}
               onClick={onSaveClick}
             >
-              <img src={save_pink} className="save icon" alt="Save"></img>
+              <img src={save_pink} className='save icon' alt='Save'></img>
             </div>
 
-            <div
-              className="cardCancelButton"
-              onClick={onCancelClick}
-            >
-              <img src={back_pink} className="back icon" alt="back"></img>
+            <div className='cardCancelButton' onClick={onCancelClick}>
+              <img src={back_pink} className='back icon' alt='back'></img>
             </div>
           </div>
         </>
       ) : (
         <>
           <h2>{english}</h2>
-          <p className="card-item">
-            <span className="card-span"> {transcription}</span>{' '}
+          <p className='card-item'>
+            <span className='card-span'> {transcription}</span>{' '}
           </p>
-          <p className="card-item">
-            <span className="card-span">{russian}</span>
+          <p className='card-item'>
+            <span className='card-span'>{russian}</span>
           </p>
-          <p className="card-item">
-            <span className="card-span">{tags}</span>
+          <p className='card-item'>
+            <span className='card-span'>{tags}</span>
           </p>
 
-          <div className="card-buttons">
-            <div
-              className="cardEditButton"
-              onClick={onEditClick}
-            >
-              <img src={edit_pink} className="edit icon" alt="edit"></img>
+          <div className='card-buttons'>
+            <div className='cardEditButton' onClick={onEditClick}>
+              <img src={edit_pink} className='edit icon' alt='edit'></img>
             </div>
-            <div className="cardDeleteButton">
-              <img src={delete_pink} className="delete icon" alt="delete"></img>
+            <div className='cardDeleteButton'>
+              <img src={delete_pink} className='delete icon' alt='delete'></img>
             </div>
           </div>
         </>
