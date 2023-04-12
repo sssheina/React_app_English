@@ -1,11 +1,15 @@
-import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import React from "react";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { TranslationContext } from "../../context/TranslationContext";
 
-import './Header.css';
+import "./Header.css";
 
-import logo from '../../assets/images/logo_1.png';
+import logo from "../../assets/images/logo_1.png";
 
 function Header() {
+  const word = React.useContext(TranslationContext);
+
   return (
     <div className="header">
       <motion.div
@@ -16,7 +20,8 @@ function Header() {
       >
         <img className="logo" src={logo} alt="logo" />
         <Link to="/" className="logoA">
-          ENGLISH CARDS
+          {/* ENGLISH CARDS */}
+          {word.title}
         </Link>
       </motion.div>
       <nav className="menu">
@@ -51,7 +56,6 @@ function Header() {
               GAME
             </Link>
           </motion.li>
-         
         </ul>
       </nav>
     </div>
