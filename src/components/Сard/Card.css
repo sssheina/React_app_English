@@ -25,7 +25,7 @@ h2 {
   width: 1000px;
   height: 100px;
   display: grid;
-  grid-template-columns: 3fr 2fr 5.5fr 1.5fr 3fr;
+  grid-template-columns: 2fr 3fr 2fr 3.5fr 1.5fr 3fr;
   grid-template-rows: 1fr;
   margin: 5px;
   border-radius: 10px;

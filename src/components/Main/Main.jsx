@@ -11,13 +11,16 @@ function Main() {
   const {
     isLoading, dictionary
   } = useContext(CollectionWordsContext);
-  console.log(dictionary.map((obj)=> (obj.russian)));
+  // console.log(dictionary.map((obj)=> (obj.russian)));
   return (
     <div className="main">
       <h1>WORDLIST</h1>
       <div className="cards-map">
         {isLoading && <div >Loading...</div>}
-        {!isLoading && dictionary && dictionary.map((card) => <Card key={card.id}
+        {!isLoading && dictionary && dictionary.map((card) => 
+        <Card 
+          key={card.id}
+          id={card.id}
           english={card.english}
           transcription={card.transcription}
           russian={card.russian}

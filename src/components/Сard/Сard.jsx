@@ -9,7 +9,7 @@ import edit_pink from '../../assets/images/edit_pink.png';
 import save_pink from '../../assets/images/save_pink-pink.png';
 
 export default function Card(props) {
-  const { english, transcription, russian, tags } = props;
+  const { id, english, transcription, russian, tags } = props;
   const [isEdit, setIsEdit] = useState(false);
   const [inputText, setInputText] = useState(props);
   const [isEmpty, setIsEmpty] = useState(true);
@@ -23,6 +23,7 @@ export default function Card(props) {
 
   useEffect(() => {
     if (
+      inputText.id === '' ||
       inputText.english === '' ||
       inputText.transcription === '' ||
       inputText.russian === '' ||
@@ -50,6 +51,7 @@ export default function Card(props) {
   //вывести в консоль сообщение с параметрами формы и закрыть режим редактирования
   function onSaveClick() {
     if (
+      inputText.id === '' ||
       inputText.english === '' ||
       inputText.transcription === '' ||
       inputText.russian === '' ||
@@ -60,12 +62,22 @@ export default function Card(props) {
       console.log('Form parameters:', inputText);
       setIsEdit(false); // закрывает режим редактирования
     }
+    
   }
 
   return (
     <div className='card-word'>
       {isEdit ? (
         <>
+          <p className='card-item'>
+            <input
+              type='text'
+              value={inputText.id}
+              name='id'
+              className={`card-input ${errorClass(inputText.id)}`}
+              onChange={onChange}
+            />
+          </p>
           <p className='card-item'>
             <input
               type='text'
