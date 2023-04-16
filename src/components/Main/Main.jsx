@@ -18,14 +18,14 @@ function Main() {
       <div className="cards-map">
         {isLoading && <div >Loading...</div>}
         {!isLoading && dictionary && dictionary.map((card) => 
-        <Card 
-          key={card.id}
-          id={card.id}
-          english={card.english}
-          transcription={card.transcription}
-          russian={card.russian}
-          tags={card.tags}
-          isSelected={card.isSelected} />)}
+          <Card 
+            key={card.id}
+            id={card.id}
+            english={card.english}
+            transcription={card.transcription}
+            russian={card.russian}
+            tags={card.tags}
+            isSelected={card.isSelected} />)}
       </div>
     
     </div>

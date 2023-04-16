@@ -129,7 +129,11 @@ export default function Card(props) {
         </>
       ) : (
         <>
-          <h2>{english}</h2>
+          <p className='card-item'>
+            <span className='card-span'> {id}</span>{' '}
+          </p>
+          <h2>{english}</h2>{' '}
+          
           <p className='card-item'>
             <span className='card-span'> {transcription}</span>{' '}
           </p>
