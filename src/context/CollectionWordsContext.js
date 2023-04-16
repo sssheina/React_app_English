@@ -49,7 +49,7 @@ export const CollectionWords = (props) => {
 
   const updateWord = (updatedWord) => {
     setIsLoading(true);
-    fetch(`http://itgirlschool.justmakeit.ru/api/words/update/\${updatedWord.id}`, {
+    fetch(`http://itgirlschool.justmakeit.ru/api/words/${updatedWord.id}/update`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
@@ -95,22 +95,14 @@ export const CollectionWords = (props) => {
  
 
   const deleteWord = (id) => {
-    const urlParams = new URLSearchParams();
-    urlParams.append('id', updatedWord.id);
-    urlParams.append('update', JSON.stringify(updatedWord));
-
-    const url = new URL('http://itgirlschool.justmakeit.ru/api/words/update');
-    url.search = urlParams.toString();
-    setIsLoading(true); // set isLoading to true before making the API call
-    fetch(url, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(updatedWord),
+    setIsLoading(true);
+    fetch(`http://itgirlschool.justmakeit.ru/api/words/${updatedWord.id}/delete`, {
+      method: 'DELETE',
     })
-      .then((response) => response.json())
-      .then(() => {
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error('Failed to delete word');
+        }
         setDictionary((prevDictionary) =>
           prevDictionary.filter((word) => word.id !== id)
         );
@@ -120,9 +112,39 @@ export const CollectionWords = (props) => {
         setError(error);
       })
       .finally(() => {
-        setIsLoading(false); // set isLoading to false after the API call is complete
+        setIsLoading(false);
       });
   };
+  
+  // const deleteWord = (id) => {
+  //   const urlParams = new URLSearchParams();
+  //   urlParams.append('id', updatedWord.id);
+  //   urlParams.append('update', JSON.stringify(updatedWord));
+
+  //   const url = new URL('http://itgirlschool.justmakeit.ru/api/words/update');
+  //   url.search = urlParams.toString();
+  //   setIsLoading(true); // set isLoading to true before making the API call
+  //   fetch(url, {
+  //     method: 'POST',
+  //     headers: {
+  //       'Content-Type': 'application/json',
+  //     },
+  //     body: JSON.stringify(updatedWord),
+  //   })
+  //     .then((response) => response.json())
+  //     .then(() => {
+  //       setDictionary((prevDictionary) =>
+  //         prevDictionary.filter((word) => word.id !== id)
+  //       );
+  //     })
+  //     .catch((error) => {
+  //       console.error('Error deleting word: ', error);
+  //       setError(error);
+  //     })
+  //     .finally(() => {
+  //       setIsLoading(false); // set isLoading to false after the API call is complete
+  //     });
+  // };
 
   return (
     <CollectionWordsContext.Provider
@@ -133,6 +155,7 @@ export const CollectionWords = (props) => {
         error,
         addWord,
         updateWord,
+        updatedWord,
         setUpdatedWord,
         deleteWord,
       }}
