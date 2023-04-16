@@ -1,58 +1,56 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
-import { TranslationContext } from "../../context/TranslationContext";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
-import "./Header.css";
 
-import logo from "../../assets/images/logo_1.png";
+import './Header.css';
+
+import logo from '../../assets/images/logo_1.png';
 
 function Header() {
-  const word = React.useContext(TranslationContext);
-
+  
   return (
-    <div className="header">
+    <div className='header'>
       <motion.div
-        className="logoBlock"
+        className='logoBlock'
         whileHover={{
           scale: 1.03,
         }}
       >
-        <img className="logo" src={logo} alt="logo" />
-        <Link to="/" className="logoA">
-          {/* ENGLISH CARDS */}
-          {word.title}
+        <img className='logo' src={logo} alt='logo' />
+        <Link to='/' className='logoA'>
+          ENGLISH CARDS          
         </Link>
       </motion.div>
-      <nav className="menu">
-        <ul className="menuList">
+      <nav className='menu'>
+        <ul className='menuList'>
           <motion.li
-            className="menuItem"
+            className='menuItem'
             whileHover={{
               scale: 1.2,
             }}
           >
-            <Link to="/" className="menuA">
+            <Link to='/' className='menuA'>
               HOME
             </Link>
           </motion.li>
           <motion.li
-            className="menuItem"
+            className='menuItem'
             whileHover={{
               scale: 1.2,
             }}
           >
-            <Link to="/words" className="menuA">
+            <Link to='/words' className='menuA'>
               WORDS
             </Link>
           </motion.li>
           <motion.li
-            className="menuItem"
+            className='menuItem'
             whileHover={{
               scale: 1.2,
             }}
           >
-            <Link to="/game" className="menuA">
+            <Link to='/game' className='menuA'>
               GAME
             </Link>
           </motion.li>
