@@ -46,9 +46,16 @@ export const CollectionWords = (props) => {
       });
   };
 
+
   const updateWord = (updatedWord) => {
-    setIsLoading(true); // set isLoading to true before making the API call
-    fetch('http://itgirlschool.justmakeit.ru/api/words/?' + updatedWord.id)
+    setIsLoading(true);
+    fetch(`http://itgirlschool.justmakeit.ru/api/words/update/\${updatedWord.id}`, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(updatedWord),
+    })
       .then((response) => response.json())
       .then((data) => {
         setDictionary((prevDictionary) =>
@@ -62,9 +69,29 @@ export const CollectionWords = (props) => {
         setError(error);
       })
       .finally(() => {
-        setIsLoading(false); // set isLoading to false after the API call is complete
+        setIsLoading(false);
       });
   };
+  
+  // const updateWord = (updatedWord) => {
+  //   setIsLoading(true); // set isLoading to true before making the API call
+  //   fetch('http://itgirlschool.justmakeit.ru/api/words/?' + updatedWord.id)
+  //     .then((response) => response.json())
+  //     .then((data) => {
+  //       setDictionary((prevDictionary) =>
+  //         prevDictionary.map((word) =>
+  //           word.id === updatedWord.id ? data : word
+  //         )
+  //       );
+  //     })
+  //     .catch((error) => {
+  //       console.error('Error updating word: ', error);
+  //       setError(error);
+  //     })
+  //     .finally(() => {
+  //       setIsLoading(false); // set isLoading to false after the API call is complete
+  //     });
+  // };
  
 
   const deleteWord = (id) => {
