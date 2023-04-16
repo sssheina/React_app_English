@@ -71,8 +71,10 @@ export const CollectionWords = (props) => {
       .finally(() => {
         setIsLoading(false);
       });
+      
   };
   
+
   // const updateWord = (updatedWord) => {
   //   setIsLoading(true); // set isLoading to true before making the API call
   //   fetch('http://itgirlschool.justmakeit.ru/api/words/?' + updatedWord.id)

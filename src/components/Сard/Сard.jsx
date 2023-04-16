@@ -14,6 +14,8 @@ export default function Card(props) {
   const [inputText, setInputText] = useState(props);
   const [isEmpty, setIsEmpty] = useState(true);
 
+  console.log(inputText);
+
   const onChange = (event) => {
     setInputText({
       ...inputText,
