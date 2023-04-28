@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
+import { useSelector } from 'react-redux';
 
 import './Game.css';
 import '../../assets/styles/variables.css';
@@ -11,8 +12,21 @@ export default function Game(props) {
   const [pressed, setPressed] = useState(false);
   const [counter, setCounter] = useState(1);
   const [viewCard, setViewCard] = useState(false);
+  const words = useSelector((state) => state);
 
   let word = Array[index];
+
+  const handleChanges = () => {
+    setPressed(!pressed);
+  };
+
+
+  const handleViewCard = () => {
+    if (!viewCard) {
+      setViewCard(true);
+      props.onLearned();
+    }
+  };
 
   const handleNextClick = () => {
     if (index + 1 >= Array.length) {
@@ -50,31 +64,21 @@ export default function Game(props) {
     setCounter(counter - 1);
   };
 
-  const handleChanges = () => {
-    setPressed(!pressed);
-  };
-
+  
   const ref = useRef();
   useEffect(() => {
     ref.current.focus();
   }, []);
 
-  const handleViewCard = () => {
-    if (!viewCard) {
-      setViewCard(true);
-      props.onLearned();
-    }
-  };
-
   return (
-    <div className="gameMain">
-      <button className="gameLearn" onClick={handleViewCard}>
+    <div className='gameMain'>
+      <button className='gameLearn' onClick={handleViewCard} ref={ref}>
         Learned word
       </button>
 
-      <div className="game">
+      <div className='game'>
         <motion.button
-          className="game-prev"
+          className='game-prev'
           onClick={handlePrevClick}
           initial={{
             x: -30,
@@ -92,23 +96,23 @@ export default function Game(props) {
         </motion.button>
 
         <motion.div
-          className="game-card"
+          className='game-card'
           {...index}
           animate={{ rotate: 360 }}
           transition={{ duration: 1 }}
         >
-          <h2 className="game-english">{word.english}</h2>
+          <h2 className='game-english'>{word.english}</h2>
           <p>
-            <span className="game-span">{word.transcription}</span>
+            <span className='game-span'>{word.transcription}</span>
           </p>
 
-          <div className="game-counter">{counter}</div>
-          <button className="game-button" onClick={handleChanges} >
+          <div className='game-counter'>{counter}</div>
+          <button className='game-button' onClick={handleChanges} >
             {pressed ? (
-              <div className="game-translate">{word.russian}</div>
+              <div className='game-translate'>{word.russian}</div>
             ) : (
               <motion.button
-                className="game-buttonName"
+                className='game-buttonName'
                 ref={ref}
                 whileHover={{
                   scale: 1.1,
@@ -122,7 +126,7 @@ export default function Game(props) {
         </motion.div>
 
         <motion.button
-          className="game-next"
+          className='game-next'
           onClick={handleNextClick}
           initial={{
             x: 30,

@@ -1,7 +1,7 @@
 {
     "extends":"react-app",
     "rules": {
-        "indent": ["error", 2],
+        "indent": ["error", 4],
         "semi": ["error", "always"],
         "quotes": ["error", "single"],
         "no-unused-vars": 2,
