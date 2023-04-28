@@ -5,16 +5,17 @@ import { useSelector } from 'react-redux';
 import './Game.css';
 import '../../assets/styles/variables.css';
 
-import Array from '../../utils/cards';
+// import Array from '../../utils/cards';
 
 export default function Game(props) {
   const [index, setIndex] = useState(0);
   const [pressed, setPressed] = useState(false);
   const [counter, setCounter] = useState(1);
   const [viewCard, setViewCard] = useState(false);
-  const words = useSelector((state) => state);
+  const Array = useSelector((state) => state);
 
   let word = Array[index];
+  
 
   const handleChanges = () => {
     setPressed(!pressed);
@@ -106,7 +107,7 @@ export default function Game(props) {
             <span className='game-span'>{word.transcription}</span>
           </p>
 
-          <div className='game-counter'>{counter}</div>
+          <div className='game-counter'>{counter + '/' + Array.length}</div>
           <button className='game-button' onClick={handleChanges} >
             {pressed ? (
               <div className='game-translate'>{word.russian}</div>

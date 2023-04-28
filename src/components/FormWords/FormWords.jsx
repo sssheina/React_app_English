@@ -111,7 +111,7 @@ export default function FormWords() {
         type='text'
         placeholder='english'
         name='english'
-        value={inputText.english || ''}
+        value={userEnglish || ''}
         onChange={(e) => SetuserEnglish(e.target.value)}
       ></input>
       <input
@@ -120,7 +120,7 @@ export default function FormWords() {
         type='text'
         placeholder='transcription'
         name='transcription'
-        value={inputText.transcription || ''}
+        value={userTranscription || ''}
         onChange={(e) => SetuserTranscription(e.target.value)}
       ></input>
       <input
@@ -129,7 +129,7 @@ export default function FormWords() {
         type='text'
         placeholder='russian'
         name='russian'
-        value={inputText.russian || ''}
+        value={userRussian || ''}
         onChange={(e) => SetuserRussian(e.target.value)}
       ></input>
       <input
@@ -138,7 +138,7 @@ export default function FormWords() {
         type='text'
         placeholder='tags'
         name='tags'
-        value={inputText.tags || ''}
+        value={userTags || ''}
         onChange={(e) => SetuserTags(e.target.value)}
       ></input>
 
@@ -146,8 +146,8 @@ export default function FormWords() {
         <div className='inputSaveButton'>
           <img
             src={save_pink}
-            className={`inputIcon icon ${isEmpty ? 'disabled' : ''}`}
-            disabled={isEmpty}
+            className='inputIcon icon'
+            // disabled={isEmpty}
             alt='Save'
             onClick={handleSubmit}
           ></img>
