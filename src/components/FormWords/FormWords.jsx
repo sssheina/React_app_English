@@ -23,6 +23,10 @@ export default function FormWords() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (!userEnglish || !userTranscription || !userRussian || !userTags) {
+      alert('Please fill in all fields');
+      return;
+    }
     const newWord = {
       english: userEnglish,
       transcription: userTranscription,
@@ -45,56 +49,7 @@ export default function FormWords() {
         SetuserTags('');
       };
 
-    // __________________________
-
-//   const handleChangeInput = (event) => {
-//     setInputText({
-//       ...inputText,
-//       [event.target.name]: event.target.value,
-//     });
-
-//     if (event.target.value.match(/[0-9]/)) {
-//       alert('Пожалуйста, вводите только буквы');
-//     } else if (event.target.value === '') {
-//       alert('Пожалуйста, заполните все поля');
-//     }
-//   };
-
-//   useEffect(() => {
-//     if (
-//       inputText.english === '' ||
-//       inputText.transcription === '' ||
-//       inputText.russian === '' ||
-//       inputText.tags === ''
-//     ) {
-//       setIsEmpty(true);
-//     } else {
-//       setIsEmpty(false);
-//     }
-//   }, [inputText]);
-
-//   function onSubmit() {
-//     if (
-//       inputText.english === '' ||
-//       inputText.transcription === '' ||
-//       inputText.russian === '' ||
-//       inputText.tags === ''
-//     ) {
-//       alert('Error: Please fill in all the fields');
-//     } else {
-//       console.log('Form parameters:', inputText);
-//       // addWord(inputText);
-//       // setIsEmpty();
-//       addWord(inputText);
-//       setInputText({});
-//       setIsEmpty(true);
-//     }
-//   }
-
-//   const clearForm = () => {
-//     setIsEmpty();
-//     setIsEmpty(true);
-//   };
+    
 
   return (
     <motion.div
@@ -106,7 +61,6 @@ export default function FormWords() {
       <span className='inputLable'> ADD WORD:</span>
 
       <input
-        // className={`inputEnter ${inputText.english}`}
         className='inputEnter'
         type='text'
         placeholder='english'
@@ -115,7 +69,6 @@ export default function FormWords() {
         onChange={(e) => SetuserEnglish(e.target.value)}
       ></input>
       <input
-        // className={`inputEnter${inputText.transcription}`}
         className='inputEnter'
         type='text'
         placeholder='transcription'
@@ -124,7 +77,6 @@ export default function FormWords() {
         onChange={(e) => SetuserTranscription(e.target.value)}
       ></input>
       <input
-        // className={`inputEnter ${inputText.russian}`}
         className='inputEnter'
         type='text'
         placeholder='russian'
@@ -133,7 +85,6 @@ export default function FormWords() {
         onChange={(e) => SetuserRussian(e.target.value)}
       ></input>
       <input
-        // className={`inputEnter ${inputText.tags}`}
         className='inputEnter'
         type='text'
         placeholder='tags'
@@ -147,7 +98,6 @@ export default function FormWords() {
           <img
             src={save_pink}
             className='inputIcon icon'
-            // disabled={isEmpty}
             alt='Save'
             onClick={handleSubmit}
           ></img>

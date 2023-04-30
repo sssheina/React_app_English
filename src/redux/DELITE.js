@@ -5,7 +5,7 @@ async function DELITE(id) {
             {
                 method: 'POST',
             }
-        )
+        );
 
         if (!response.ok) {
             throw new Error('Failed to delete word');

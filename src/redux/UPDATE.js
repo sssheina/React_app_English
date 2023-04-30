@@ -10,7 +10,7 @@ async function UPDATE(updatedWord) {
             },
             body: JSON.stringify(updatedWord),
         }
-    )
+    );
 
 };
 

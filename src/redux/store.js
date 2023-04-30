@@ -5,8 +5,8 @@ function updateWordAndApi(updatedWord) {
     return function (dispatch) {
         UPDATE(updatedWord)
             .then(() => dispatch(UPDATE_ACTION(updatedWord)))
-            .catch(error => console.error(error))
-    }
+            .catch(error => console.error(error));
+    };
 }
 
 export default updateWordAndApi;

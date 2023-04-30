@@ -1,4 +1,3 @@
-// import React, {useContext} from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { getWords } from '../../redux/action';
@@ -6,7 +5,6 @@ import { POST_ACTION } from '../../redux/action';
 import GET from '../../redux/GET';
 
 import Card from '../Сard/Сard';
-// import { CollectionWordsContext } from '../../context/CollectionWordsContext';
 
 import '../../assets/styles/variables.css';
 import FormWords from '../FormWords/FormWords';
@@ -16,11 +14,7 @@ import FormWords from '../FormWords/FormWords';
 function Main() {
 
   const posts = useSelector((state) => state);
-  const dispatch = useDispatch();
-
-  // const {
-  //   isLoading, dictionary
-  // } = useContext(CollectionWordsContext);
+  const dispatch = useDispatch();;
 
   useEffect(() => {
     async function get() {

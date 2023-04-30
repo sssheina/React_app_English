@@ -2,6 +2,7 @@
 
 body {
   padding: 0;
+  padding: 100px 0px 100px 0px;
   background: var(--color-pink);
 }
 
@@ -25,7 +26,7 @@ h2 {
   width: 1000px;
   height: 100px;
   display: grid;
-  grid-template-columns: 3fr 2fr 5.5fr 1.5fr 3fr;
+  grid-template-columns:  2fr 3fr 2fr 3.5fr 1.5fr 3fr;
   grid-template-rows: 1fr;
   margin: 5px;
   border-radius: 10px;
@@ -96,6 +97,7 @@ input {
   padding: 8px 10px;
   border-radius: 3px;
   transition: all 0.3s ease;
+  width: 8rem;
 }
 
 input:focus, .cardCancelButton:focus, 
