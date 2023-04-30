@@ -15,8 +15,8 @@ const reducer = (state = initialState, action) => {
             return [action.payloud];
         }
         default:
-            return state
+            return state;
     }
-}
+};
 export default reducer;
 
