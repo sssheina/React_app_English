@@ -1,5 +1,4 @@
 async function UPDATE(updatedWord) {
-    console.log(updatedWord);
 
     await fetch(
         `http://itgirlschool.justmakeit.ru/api/words/${updatedWord.id}/update`,
